@@ -1,0 +1,7 @@
+# YSSowingMapView
+轮播图
+有一句代码依赖yykit，所以，不想要yykit的可以自己将那一句代码替换掉：cell设置图片的地方（你也可以用sd_webimage）
+
+1、YSSowingMapView就是一个view,就像使用view一样创建使用那么简单
+2、YSSowingMapView有一个代理YSSowingMapViewDelegate,目前只有一个代理方法，就是点击轮播图的图片的代理事件
+3、YSSowingMapView里面的pageControl目前我没添加点击事件，需要点击事件的自行添加
