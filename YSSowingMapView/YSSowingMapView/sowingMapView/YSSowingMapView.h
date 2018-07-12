@@ -8,7 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "YSSowingMapModel.h"
+@class YSSowingMapView;
+@protocol YSSowingMapViewDelegate<NSObject>
 
+
+/**
+ 点击轮播图的某张图的事件
+
+ @param sowingMapView sowingMapView
+ @param index 点击的图片的索引
+ @param mapModel 展示图片的对象
+ */
+- (void)sowingMapView:(YSSowingMapView *)sowingMapView selectedCurrentIocnWithIndex:(NSUInteger)index andModel:(YSSowingMapModel *)mapModel;
+@end
 
 @interface YSSowingMapView : UIView
 
@@ -31,4 +43,9 @@
  小点点
  */
 @property (weak, nonatomic)UIPageControl *pageControl;
+
+/**
+ 轮播图的代理
+ */
+@property (weak, nonatomic)id<YSSowingMapViewDelegate>delegate;
 @end

@@ -16,7 +16,7 @@
 @property (copy, nonatomic)NSString *imageUrl;
 
 /**
- 跳转对象
+ 跳转对象，自己的实际使用的对象，方便使用者使用
  */
 @property (strong, nonatomic)id object;
 

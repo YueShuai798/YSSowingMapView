@@ -81,7 +81,7 @@
         [self addSubview:page];
         self.pageControl =page;
         page.backgroundColor =[UIColor clearColor];
-        page.currentPageIndicatorTintColor =[UIColor colorWithHexString:@"509efd"];
+        page.currentPageIndicatorTintColor =[UIColor blueColor];
         page.pageIndicatorTintColor =[UIColor whiteColor];
         page.hidesForSinglePage =YES;
         self.pageControl.currentPage =0;
@@ -141,7 +141,11 @@
     return CGSizeMake(self.width, self.height);
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-
+    NSUInteger index = [self indexWithOffset:indexPath.item];
+    YSSowingMapModel *model =self.models[index];
+    if ([self.delegate respondsToSelector:@selector(sowingMapView:selectedCurrentIocnWithIndex:andModel:)]) {
+        [self.delegate sowingMapView:self selectedCurrentIocnWithIndex:index andModel:model];
+    }
 }
 - (NSUInteger)indexWithOffset:(NSUInteger)offset {
     return (self.currentIndex + offset - 1 + self.models.count) % self.models.count;
