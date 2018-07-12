@@ -13,6 +13,9 @@
 		0402F93820F6F84700E2A908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0402F93720F6F84700E2A908 /* Assets.xcassets */; };
 		0402F93B20F6F84700E2A908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0402F93920F6F84700E2A908 /* LaunchScreen.storyboard */; };
 		0402F93E20F6F84700E2A908 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0402F93D20F6F84700E2A908 /* main.m */; };
+		0402F94720F6FA1D00E2A908 /* YSSowingMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0402F94620F6FA1D00E2A908 /* YSSowingMapView.m */; };
+		0402F95020F7004F00E2A908 /* YSSowingMapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0402F94F20F7004F00E2A908 /* YSSowingMapModel.m */; };
+		DBA91F8175FB07C77BB4FAE3 /* libPods-YSSowingMapView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A417F3BF4AA998262E82D02 /* libPods-YSSowingMapView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		0402F93A20F6F84700E2A908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0402F93C20F6F84700E2A908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0402F93D20F6F84700E2A908 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0402F94520F6FA1D00E2A908 /* YSSowingMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSSowingMapView.h; sourceTree = "<group>"; };
+		0402F94620F6FA1D00E2A908 /* YSSowingMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSSowingMapView.m; sourceTree = "<group>"; };
+		0402F94E20F7004F00E2A908 /* YSSowingMapModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSSowingMapModel.h; sourceTree = "<group>"; };
+		0402F94F20F7004F00E2A908 /* YSSowingMapModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSSowingMapModel.m; sourceTree = "<group>"; };
+		148EFB52A35DE63BE940830E /* Pods-YSSowingMapView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSSowingMapView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YSSowingMapView/Pods-YSSowingMapView.debug.xcconfig"; sourceTree = "<group>"; };
+		5A417F3BF4AA998262E82D02 /* libPods-YSSowingMapView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YSSowingMapView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE022B7263227215ED013A7 /* Pods-YSSowingMapView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSSowingMapView.release.xcconfig"; path = "Pods/Target Support Files/Pods-YSSowingMapView/Pods-YSSowingMapView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA91F8175FB07C77BB4FAE3 /* libPods-YSSowingMapView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				0402F92D20F6F84300E2A908 /* YSSowingMapView */,
 				0402F92C20F6F84300E2A908 /* Products */,
+				CB8898DB34E84E85AB9CF69A /* Pods */,
+				1A18ABA8D80F36B0CC8359D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +71,7 @@
 		0402F92D20F6F84300E2A908 /* YSSowingMapView */ = {
 			isa = PBXGroup;
 			children = (
+				0402F94420F6FA0200E2A908 /* sowingMapView */,
 				0402F92E20F6F84300E2A908 /* AppDelegate.h */,
 				0402F92F20F6F84300E2A908 /* AppDelegate.m */,
 				0402F93120F6F84300E2A908 /* ViewController.h */,
@@ -71,6 +85,34 @@
 			path = YSSowingMapView;
 			sourceTree = "<group>";
 		};
+		0402F94420F6FA0200E2A908 /* sowingMapView */ = {
+			isa = PBXGroup;
+			children = (
+				0402F94520F6FA1D00E2A908 /* YSSowingMapView.h */,
+				0402F94620F6FA1D00E2A908 /* YSSowingMapView.m */,
+				0402F94E20F7004F00E2A908 /* YSSowingMapModel.h */,
+				0402F94F20F7004F00E2A908 /* YSSowingMapModel.m */,
+			);
+			path = sowingMapView;
+			sourceTree = "<group>";
+		};
+		1A18ABA8D80F36B0CC8359D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A417F3BF4AA998262E82D02 /* libPods-YSSowingMapView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB8898DB34E84E85AB9CF69A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				148EFB52A35DE63BE940830E /* Pods-YSSowingMapView.debug.xcconfig */,
+				DFE022B7263227215ED013A7 /* Pods-YSSowingMapView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +120,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0402F94120F6F84700E2A908 /* Build configuration list for PBXNativeTarget "YSSowingMapView" */;
 			buildPhases = (
+				9DAD7EB8C5A3BABB6324789D /* [CP] Check Pods Manifest.lock */,
 				0402F92720F6F84300E2A908 /* Sources */,
 				0402F92820F6F84300E2A908 /* Frameworks */,
 				0402F92920F6F84300E2A908 /* Resources */,
@@ -136,11 +179,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9DAD7EB8C5A3BABB6324789D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YSSowingMapView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0402F92720F6F84300E2A908 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0402F94720F6FA1D00E2A908 /* YSSowingMapView.m in Sources */,
+				0402F95020F7004F00E2A908 /* YSSowingMapModel.m in Sources */,
 				0402F93320F6F84300E2A908 /* ViewController.m in Sources */,
 				0402F93E20F6F84700E2A908 /* main.m in Sources */,
 				0402F93020F6F84300E2A908 /* AppDelegate.m in Sources */,
@@ -281,15 +347,13 @@
 		};
 		0402F94220F6F84700E2A908 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148EFB52A35DE63BE940830E /* Pods-YSSowingMapView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZY7SNYYV4E;
 				INFOPLIST_FILE = YSSowingMapView/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.idcool.YSSowingMapView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,15 +362,13 @@
 		};
 		0402F94320F6F84700E2A908 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE022B7263227215ED013A7 /* Pods-YSSowingMapView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZY7SNYYV4E;
 				INFOPLIST_FILE = YSSowingMapView/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.idcool.YSSowingMapView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
