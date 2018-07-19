@@ -113,7 +113,8 @@
 - (void)timeFireMethod{
     // 取出当前显示cell
     NSIndexPath *indexPath = [self.collectionView indexPathsForVisibleItems].lastObject;
-    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:(indexPath.item + 1) inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    NSInteger item =((indexPath.item + 1) > 2) ? 2 :(indexPath.item + 1);
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:item inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self scrollViewDidEndDecelerating:self.collectionView];
     });
